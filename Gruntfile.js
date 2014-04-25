@@ -10,6 +10,23 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: {
+      options: {
+        separator: '',
+      },
+      css: {
+        src: ['css/animate.min.css', 'css/app.css'],
+        dest: 'css.css',
+      },
+      js: {
+        src: ['js/livereload.js', 'js/jquery.min.js', 'js/app.js'],
+        dest: 'js.js',
+      },
+      jsdist: {
+        src: ['js/jquery.min.js', 'js/app.js'],
+        dest: 'js.js',
+      },
+    },
     watch: {
       sass: {
         files: ['sass/*.scss'],
@@ -17,15 +34,19 @@ module.exports = function(grunt) {
       },
       js: {
         files: ["js/**/*.js"],
+        tasks: ['concat:js']
+      },
+      css: {
+        files: ['css/*.css'],
+        tasks: ['concat:css']
+      },
+      assets: {
+        files: ["js.js", "css.css"],
         tasks: [],
         options: {
           livereload: true
         }
       },
-      css: {
-        files: ['css/*.css'],
-        options: { livereload: true }
-      }
     },
     nodemon: {
       dev: {
@@ -37,7 +58,7 @@ module.exports = function(grunt) {
           nodeArgs: ['--debug'],
           delayTime: 1,
           env: {
-              PORT: 5000
+              PORT: 80
           },
           cwd: __dirname
         }
@@ -52,12 +73,13 @@ module.exports = function(grunt) {
       }
     }
   });
-
+  
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-nodemon');
   
-  grunt.registerTask('default', ['compass', 'concurrent:dev']);
-  grunt.registerTask('build', ['compass']);
+  grunt.registerTask('default', ['compass', 'concat:css', 'concat:js', 'concurrent:dev']);
+  grunt.registerTask('build', ['compass', 'concat:css', 'concat:jsdist']);
 };

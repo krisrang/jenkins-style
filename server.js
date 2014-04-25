@@ -5,7 +5,7 @@ var express = require('express'),
 var port = process.env.PORT || 3000;
 
 var app = express();
-app.use(express.static(__dirname));
+app.use('/jenkins-style', express.static(__dirname));
 
 var server = http.createServer(app).listen(port);
 console.log('Express app started on port ' + port);
