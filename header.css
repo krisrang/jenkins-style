@@ -1,61 +1,61 @@
 #header {
-    background: none repeat scroll 0 0 #205081;
-    background-color: #205081;
+  background: none repeat scroll 0 0 #205081;
+  background-color: #205081;
 }
 
 #header td#login-field span a {
-    background: none;
+  background: none;
 }
 
 #breadcrumbs {
-    border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 #breadcrumbs li:hover {
-    background-color: #e6e6e6!important;
+  background-color: #e6e6e6!important;
 }
 
 .smallfont {
-    text-transform: lowercase;
-    font-size: 13px;
+  text-transform: lowercase;
+  font-size: 13px;
 }
 
 .logo {
-    background: url("jenkins_logo.png") 0 no-repeat;
-    display: block;
-    width: 330px;
-    height: 40px;
-    margin: 0px 0 0px 10px;
+  background: url("jenkins_logo.png") 0 no-repeat;
+  display: block;
+  width: 330px;
+  height: 40px;
+  margin: 0px 0 0px 10px;
 }
 
 .logo img {
-    /*display: none;*/
+  /*display: none;*/
 }
 
 #search-box {
-    width: 175px !important;
-    -moz-appearance: textfield;
-    -webkit-appearance: textfield;
-    border: none;
-    border-radius: 5em;
-    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.3);
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #333;
-    font-family: inherit;
-    height: 1.71428571428571em;
-    line-height: 1.71428571428571;
-    position: static;
-    font-size: 16px;
-    padding: 5px 10px;
-    background-image: none;
+  width: 175px !important;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  border: none;
+  border-radius: 5em;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.3);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  font-family: inherit;
+  height: 1.71428571428571em;
+  line-height: 1.71428571428571;
+  position: static;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-image: none;
 }
 
 #searchform > a > img {
-    display: none;
+  display: none;
 }
 
 .top-sticker-inner, #footer-container {
-    background-color: #f5f5f5;
-    padding: 12px 0px;
+  background-color: #f5f5f5;
+  padding: 12px 0px;
 }
