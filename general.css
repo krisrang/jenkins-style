@@ -57,3 +57,7 @@ h2 {
 td.pane.build-name {
   white-space: nowrap;
 }
+
+#side-panel-content, #main-panel-content {
+  margin: 15px 10px;
+}
