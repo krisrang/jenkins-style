@@ -61,6 +61,12 @@ td.pane.build-name {
 #side-panel-content, #main-panel-content {
   margin: 15px 10px;
 }
+
+#page-body.fixedGridLayout {
+  height: auto !important;
+  overflow-x: hidden;
+  bottom: 42px;
+}
 /* color blocks */
 @-webkit-keyframes inprogress {
   0% {
