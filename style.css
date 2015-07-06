@@ -227,8 +227,15 @@ img[src$="images/48x48/aborted.png"],  img[src$="images/48x48/aborted.gif"],  im
 #jenkins-name-icon {
   width: 0;
   height: 0;
-  padding: 69px 17px;
+  padding: 17px 69px;
   background: url('text.png');
+}
+
+#jenkins-head-icon {
+  width: 0;
+  height: 0;
+  padding: 18px;
+  background: url('logo.png');
 }
 
 #search-box {
