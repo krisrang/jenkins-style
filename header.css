@@ -20,16 +20,11 @@
   font-size: 13px;
 }
 
-.logo {
-  background: url("jenkins_logo.png") 0 no-repeat;
-  display: block;
-  width: 330px;
-  height: 40px;
-  margin: 0px 0 0px 10px;
-}
-
-.logo img {
-  /*display: none;*/
+#jenkins-name-icon {
+  width: 0;
+  height: 0;
+  padding: 69px 17px;
+  background: url('text.png');
 }
 
 #search-box {
