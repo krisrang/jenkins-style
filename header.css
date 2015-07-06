@@ -30,8 +30,11 @@
 #jenkins-head-icon {
   width: 0;
   height: 0;
-  padding: 18px;
+  padding: 15px;
   background: url('logo.png');
+  border-radius: 15px;
+  border: 2px solid white;
+  bottom: 3px;
 }
 
 #search-box {
